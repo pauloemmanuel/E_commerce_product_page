@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+//font-family: Kumbh Sans
+
+
+$orange: hsl(26, 100%, 55%);
+$paleorange: hsl(25, 100%, 94%);
+$varkblue: hsl(220, 13%, 13%);
+$grayisblue: hsl(219, 9%, 45%);
+$grayishbluelighter: hsl(220, 14%, 75%);
+$lightgrayishblue: hsl(223, 64%, 98%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+
+:root *{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Kumbh Sans;
+  color:black;
+  font-size: 16px;
+  .container{
+    width: 1440px;
+    max-width: 90%;
+    margin:auto;
+    header{
+      margin:0;
+      display:flex;
+      flex-flow: nowrap row;
+      justify-content: space-between; 
+      align-items: center;
+      padding-bottom:0px;
+      border-bottom:2px solid $lightgrayishblue;
+    
+      nav{
+        display: flex;
+        justify-content: left;
+     
+    
+        align-items: center;
+        ul{
+          display: flex;
+          align-items: center;
+    
+          list-style: none; 
+          li{
+            color:$grayisblue;  
+            font-weight: 400;
+            border-bottom:3px solid transparent;
+            padding:50px;
+            padding-right:15px;
+            padding-left: 15px;
+            &:hover{ 
+              border-bottom:3px solid $orange;
+            }
+          }
+        }
+        & img{
+          padding-right: 30px;
+          
+        }
+      }
+      .secondary-nav{
+         display:flex;
+         align-items: center;
+         padding-right: 0;
+       .avatar{ 
+         margin-left: 40px;
+         padding-right: 0;
+         max-width:50px;
+         border-radius: 50%;
+         border:2px solid transparent;
+         &:hover{
+          border:2px solid $orange;
+         }
+       }
+        img.avatar{
+          width:100px;
+         }       
+      }
+    }
+
+    .product{ 
+      width:100%;
+      display:flex;
+      padding:70px;
+      height:100vh-10vh;
+      justify-content:space-between;
+
+
+      .product-photos{
+        width:100%;
+        height:100%;
+        display:flex;
+      
+        flex-flow:nowrap column;
+   
+        align-items: center;
+      
+        .big-photo{
+          width:30rem;
+          height:30rem;
+          border-radius: 20px 20px;
+          background-position: center;
+          background-size: cover;
+         
+        }
+        .photo-1{
+          background-image:url('../images/image-product-1.jpg');
+        }
+        .photo-2{
+          background-image:url('../images/image-product-2.jpg');
+        }
+        .photo-3{
+          background-image:url('../images/image-product-3.jpg');
+        }
+        .photo-4{
+          background-image:url('../images/image-product-4.jpg');
+        }
+
+        .small-photos{
+          display:inline-flex;
+          margin-top:20px;
+          
+        .small-photo{
+          width:6.1rem;
+          height:6.2rem;
+          border-radius:15px 15px;
+         
+          margin:15px;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+         
+          &:hover{
+            border:3px solid $orange;
+          }
+        }
+        .thumb-1{
+          background-image:url('../images/image-product-1-thumbnail.jpg');
+        }
+        .thumb-2{
+          background-image:url('../images/image-product-2-thumbnail.jpg');
+        }
+        .thumb-3{
+          background-image:url('../images/image-product-3-thumbnail.jpg');
+        }
+        .thumb-4{
+          background-image:url('../images/image-product-4-thumbnail.jpg');
+        }
+
+      }
+      }
+      main{
+        display: flex;
+        flex-flow: column;
+        margin-left: 9rem;
+        .company-name{
+          padding-top:70px;
+          padding-bottom:20px;
+          color:$orange;
+          letter-spacing: 2px;
+          font-weight: 700;
+          text-transform: uppercase;
+          line-height:20px;
+        }
+        .shoe-name{
+          font-weight: 700;
+          font-size: 60px;
+          line-height: 60px;
+          padding-bottom:40px;
+        }
+        .shoe-description{
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 30px;
+          color:$grayishbluelighter;
+          padding-bottom: 20px;
+        }
+        .shoe-price{
+          font-weight: 400;
+          font-size: 40px;
+          font-weight: 700;
+          color:$black;
+          padding-bottom: 20px;
+        }
+      }
+    }
+
+  }
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+}
+
+
+
+
